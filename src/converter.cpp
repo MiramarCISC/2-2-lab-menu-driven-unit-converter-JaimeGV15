@@ -46,7 +46,7 @@ bool requiresNonNegativeValue(int choice) {
 }
 
 bool isValidValueForChoice(int choice, double value) {
-    // :
+
     // 1. Invalid menu choices should return false.
     // 2. Length and weight conversions should reject negative values.
     // 3. Temperature conversions should allow negative values.
