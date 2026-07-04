@@ -81,4 +81,4 @@ void printMenu()
     cout << endl;
     cout << "Enter choice: ";
     
-} //Jaime: I added an extra space to give the intial square bracket its own line, so its easier to see where it begins and where it ends.
+} //Jaime: I added an extra space to give the intial square bracket its own line, so its easier to see where it begins and where it ends
