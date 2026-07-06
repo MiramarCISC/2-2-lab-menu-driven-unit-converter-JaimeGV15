@@ -34,19 +34,22 @@ double celsiusToFahrenheit(double celsius) {
 }
 
 bool isValidMenuChoice(int choice) {
+    // Checks whether the user's menu selection is within the valid range.
     //  return true when choice is between EXIT_CHOICE and CELSIUS_TO_FAHRENHEIT.
-    return choice >= 0 && choice <=6 ;
+    return choice >= 0 && choice <=6;
 }
 
 bool requiresNonNegativeValue(int choice) {
     // Length and weight conversions cannot use negative values.
     // Temperature conversions may use negative values.
     //  return true for choices 1 through 4.
-    return choice >=1 && choice <=4 ;
+    return choice >=1 && choice <=4;
 }
 
 bool isValidValueForChoice(int choice, double value) {
 
+    // Verifies that the entered value is valid for selected conversion.
+    // Temperature conversions may allow negative values, but length and weight should not.
     // 1. Invalid menu choices should return false.
     // 2. Length and weight conversions should reject negative values.
     // 3. Temperature conversions should allow negative values.
